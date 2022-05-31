@@ -1,0 +1,54 @@
+body {
+  position: relative;
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+  width:100vw;
+  height:100vh;
+  overflow:hidden;
+
+  background:#202020;
+  font-family: sans-serif;
+}
+
+#output-wrapper {
+  width:600px;
+  height:600px;
+  
+  border: 1px solid #444;
+  border-radius:50%;
+  overflow: hidden;
+}
+
+#output {
+  width:100%;
+  height:100%;
+
+  background: linear-gradient(0deg, hsl(250, 90%, 80%), transparent 75%);
+}
+
+#controls {
+  position: absolute;
+  bottom:0;
+  left:50%;
+  transform: translateX(-50%);
+
+  display:flex;
+  width:400px;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+#controls > div {
+  display:flex;
+  flex-direction: column;
+  flex:0 0 190px;
+  text-align: center;
+}
+
+#controls label {
+  color:white;
+  margin-bottom:10px;
+}

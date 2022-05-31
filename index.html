@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="I saw this in a Google Web Dev YT short and wanted to make it myself">
+  <title>Multigradient Funsises</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <!-- Based on https://www.youtube.com/shorts/qA4C_O87H18 -->
+
+  <div id="output-wrapper">
+    <div id="output"></div>
+  </div>
+
+  <div id="controls">
+    <div>
+      <label for="numgrads">Number of Gradients (6)</label>
+      <input type="range" name="numgrads" id="numgrads" step="1" min="1" max="20" value="6">
+    </div>
+
+    <div>
+      <label for="length">Gradient Length (60%)</label>
+      <input type="range" name="length" id="length" step="1" min="1" max="100" value="60">
+    </div>
+  </div>
+
+  <script src="main.js" type="module"></script>
+</body>
+</html>
